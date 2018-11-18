@@ -1,3 +1,14 @@
 .App {
   text-align: center;
 }
+.topOfLayout {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.products{
+  width: 20%;
+}
+.details{
+  width: 80%;
+}
