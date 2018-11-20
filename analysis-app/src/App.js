@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import  ProductCard from './components/ProductCard/ProductCard'
 
 class App extends Component {
 
@@ -40,12 +41,11 @@ class App extends Component {
                 <li>Third</li>
               </ul>  
           </div>
-          <div className="details">
-            <h3>Product Title</h3>
-            <p>Product Image</p>
-            <p>Product Description</p>
-            <p>Product current price</p>
-          </div>
+            <ProductCard
+            title={this.state.activeProduct.name}
+            image={this.state.activeProduct.photo}
+            description={this.state.activeProduct.description}
+            price={this.state.activeProduct.sale}/>
         </div>
       </div>
     );
