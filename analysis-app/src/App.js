@@ -34,8 +34,9 @@ class App extends Component {
       <div className="App">
         <h1>Product Analysis App</h1>
         <div className="topOfLayout">
-            <Switcher/>
-            
+            <Switcher
+            list={this.state.products}/>
+
             <ProductCard
             title={this.state.activeProduct.name}
             image={this.state.activeProduct.photo}

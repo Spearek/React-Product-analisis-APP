@@ -1,15 +1,18 @@
 import React from 'react';
 import './Switcher.css';
+import SelectedItem from './SelectedItem/SelectedItem'
 
-const switcher = () => {
+const switcher = (props) => {
+   
+    let switchList = props.list.map(product =>{
+        return <SelectedItem
+            name={product.name} />
+    });
 
     return (
         <div className="products">
             <select>
-             <option value="product_1">Product 1</option>  
-             <option value="product_2">Product 2</option>  
-             <option value="product_3"> Product 3</option> 
-             <option value="product_4"> Product 4</option> 
+              {switchList}
             </select>
         </div>
     )
