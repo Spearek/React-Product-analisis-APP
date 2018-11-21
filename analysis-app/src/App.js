@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import  ProductCard from './components/ProductCard/ProductCard'
+import  ProductCard from './components/ProductCard/ProductCard';
+import Switcher from './components/Switcher/Switcher';
 
 class App extends Component {
 
@@ -33,14 +34,8 @@ class App extends Component {
       <div className="App">
         <h1>Product Analysis App</h1>
         <div className="topOfLayout">
-          <div className="products">
-            <p>Choose a product:</p>
-              <ul>
-                <li>First</li>
-                <li>Second</li>
-                <li>Third</li>
-              </ul>  
-          </div>
+            <Switcher/>
+            
             <ProductCard
             title={this.state.activeProduct.name}
             image={this.state.activeProduct.photo}

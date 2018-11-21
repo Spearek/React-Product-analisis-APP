@@ -14,3 +14,6 @@ const switcher = () => {
         </div>
     )
 }
+
+
+export default switcher;
