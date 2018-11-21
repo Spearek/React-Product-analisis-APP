@@ -6,7 +6,8 @@ const switcher = (props) => {
    
     let switchList = props.list.map(product =>{
         return <SelectedItem
-            name={product.name} />
+            name={product.name}
+            key={product.serialNum} />
     });
 
     return (
