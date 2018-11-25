@@ -19,7 +19,21 @@ class App extends Component {
         photo: 'example_processor.jpg',
         description: 'A central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logic, controlling and input/output (I/O) operations specified by the instructions. The computer industry has used the term "central processing unit" at least since the early 1960s.',
         purchase: 120,
-        sale: 134}  
+        sale: 134},
+        
+        { name: 'Example Memory',
+        serialNum: 'Mem460432EXAMPLESERIAL',
+        photo: 'example_memory.jpg',
+        description: 'RAM is a form of computer data storage that stores data and machine code currently being used. A random-access memory device allows data items to be read or written in almost the same amount of time irrespective of the physical location of data inside the memory. In contrast, with other direct-access data storage media such as hard disks, CD-RWs, DVD-RWs and the older magnetic tapes and drum memory, the time required to read and write data items varies significantly depending on their physical locations on the recording medium, due to mechanical limitations such as media rotation speeds and arm movement.',
+        purchase: 62,
+        sale: 65},
+
+        { name: 'Example Motherboard',
+        serialNum: 'MB123054EXAMPLESERIAL',
+        photo: 'example_motherboard.jpg',
+        description: 'A Motherboard is the main printed circuit board (PCB) found in general purpose microcomputers and other expandable systems. It holds and allows communication between many of the crucial electronic components of a system, such as the central processing unit (CPU) and memory, and provides connectors for other peripherals. Unlike a backplane, a motherboard usually contains significant sub-systems such as the central processor, the chipset//s input/output and memory controllers, interface connectors, and other components integrated for general purpose use and applications.',
+        purchase: 150,
+        sale: 157}
     ],
 
     activeProduct: 
