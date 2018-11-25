@@ -31,6 +31,14 @@ class App extends Component {
       sale: 48 }
   }
 
+  changeProductHandler = (event) => {
+
+    let newProduct = this.state.products.filter((product)=>{
+      return product.name === event.target.value;
+    });
+    this.setState({activeProduct: newProduct[0]});
+  }
+
 
   render() {
     return (
@@ -38,7 +46,10 @@ class App extends Component {
         <h1>Product Analysis App</h1>
         <div className="topOfLayout">
             <Switcher
-            list={this.state.products}/>
+            list={this.state.products}
+            selectValue={this.state.activeProduct.name}
+            changed={this.changeProductHandler}
+            />
 
             <ProductCard
             title={this.state.activeProduct.name}
