@@ -71,23 +71,28 @@ class App extends Component {
         <h1>Product Analysis App</h1>
         <div className="topOfLayout">
             <Switcher
-            list={this.state.products}
-            selectValue={this.state.activeProduct.name}
-            changed={this.changeProductHandler}
+              list={this.state.products}
+              selectValue={this.state.activeProduct.name}
+              changed={this.changeProductHandler}
             />
 
             <ProductCard
-            title={this.state.activeProduct.name}
-            image={this.state.activeProduct.photo}
-            description={this.state.activeProduct.description}
-            price={this.state.activeProduct.sale}/>
+              title={this.state.activeProduct.name}
+              image={this.state.activeProduct.photo}
+              description={this.state.activeProduct.description}
+              price={this.state.activeProduct.sale}
+            />
         </div>
-        <Chart
-          data={this.state.activeProduct.qtyBought}
-          chartTitle={'Annual purchase chart'}/>
-        <Chart
-          data={this.state.activeProduct.qtySold}
-          chartTitle={'Annual sales chart'}/>
+
+        <div className="charts">
+          <Chart
+            data={this.state.activeProduct.qtyBought}
+            chartTitle={'Annual purchase chart'}/>
+          <Chart
+            data={this.state.activeProduct.qtySold}
+            chartTitle={'Annual sales chart'}/>
+        </div>
+
       </div>
     );
   }
