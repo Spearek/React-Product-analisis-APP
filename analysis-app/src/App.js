@@ -12,7 +12,7 @@ class App extends Component {
         serialNum: 'HDD1234EXAMPLESERIAL',
         photo: 'example_drive.jpg',
         description: 'Hard disk drive (HDD), hard disk, hard drive, or fixed disk,[b] is an electromechanical data storage device that uses magnetic storage to store and retrieve digital information using one or more rigid rapidly rotating disks (platters) coated with magnetic material. The platters are paired with magnetic heads, usually arranged on a moving actuator arm, which read and write data to the platter surfaces.[2] Data is accessed in a random-access manner, meaning that individual blocks of data can be stored or retrieved in any order and not only sequentially.',
-        qtyBought: [45,60,33,47,55,41,20,74,50,66,116,84],
+        qtyBought: [45,60,33,47,55,41,32,74,50,66,104,84],
         qtySold: [40,57,40,30,24,14,50,43,38,60,143,152],
         purchase: 44,
         sale: 48 },
