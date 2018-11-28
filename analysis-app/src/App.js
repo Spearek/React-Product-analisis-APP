@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import  ProductCard from './components/ProductCard/ProductCard';
 import Switcher from './components/Switcher/Switcher';
+import Chart from './components/Chart/Chart';
 
 class App extends Component {
 
@@ -71,6 +72,7 @@ class App extends Component {
             description={this.state.activeProduct.description}
             price={this.state.activeProduct.sale}/>
         </div>
+        <Chart/>
       </div>
     );
   }
