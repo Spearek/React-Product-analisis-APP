@@ -80,7 +80,8 @@ class App extends Component {
               title={this.state.activeProduct.name}
               image={this.state.activeProduct.photo}
               description={this.state.activeProduct.description}
-              price={this.state.activeProduct.sale}
+              salePrice={this.state.activeProduct.sale}
+              purchacePrice={this.state.activeProduct.purchase}
             />
         </div>
 

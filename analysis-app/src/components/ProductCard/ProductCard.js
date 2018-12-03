@@ -9,7 +9,10 @@ const product = (props) => {
             <h3>{props.title}</h3>
             <img src={require('../../assets/products_images/'+ props.image)} alt='xxx' />
             <p>{props.description}</p>
-            <p>{props.price}</p>
+            <div className="Prices">
+                <p>Current purchase price: {props.purchacePrice}</p>
+                <p>Current sale price: {props.salePrice}</p>
+            </div>
         </div>
     )
 }

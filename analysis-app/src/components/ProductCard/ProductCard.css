@@ -3,9 +3,25 @@
     border:2px solid gray;
     border-radius: 5px; 
     box-shadow: 9px -2px 11px -1px #000000;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .Card img{
     width: 30%;
+}
+
+.Prices{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Prices p {
+    font-weight: 600;
+}
+
+.Prices p:first-of-type{
+    color: red;
+}
+.Prices p:last-of-type{
+    color: green;
 }
