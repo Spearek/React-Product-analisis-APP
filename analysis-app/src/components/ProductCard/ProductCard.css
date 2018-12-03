@@ -1,5 +1,9 @@
 .Card {
     width: 60%;
+    border:2px solid gray;
+    border-radius: 5px; 
+    box-shadow: 9px -2px 11px -1px #000000;
+    margin-bottom: 20px;
 }
 
 .Card img{
