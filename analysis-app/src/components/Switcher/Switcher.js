@@ -1,5 +1,5 @@
 import React from 'react';
-import './Switcher.css';
+import  classes from'./Switcher.module.css';
 import SelectedItem from './SelectedItem/SelectedItem'
 
 const switcher = (props) => {
@@ -12,7 +12,7 @@ const switcher = (props) => {
     });
 
     return (
-        <div className="products">
+        <div className={classes.products}>
             <select onChange={props.changed} value={props.selectValue}>
               {switchList}
             </select>

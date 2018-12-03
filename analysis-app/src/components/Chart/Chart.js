@@ -1,6 +1,6 @@
 import React from 'react';
 import {Bar, Doughnut, Line, Pie, HorizontalBar} from 'react-chartjs-2';
-import './Chart.css'
+import classes from './Chart.module.css'
 
 
 const chart = (props) => {
@@ -59,7 +59,7 @@ const chart = (props) => {
     }
     
     return (
-    <div className="chart">
+    <div className={classes.chart}>
         <HorizontalBar
         data={chartData}
         options={chartOptions}

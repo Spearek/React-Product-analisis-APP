@@ -21,10 +21,12 @@
 
 .Prices p:first-of-type{
     color: red;
+    
 }
 .Prices p:nth-of-type(2){
     color: orange;
 }
+
 .Prices p:last-of-type{
     color: green;
 }
