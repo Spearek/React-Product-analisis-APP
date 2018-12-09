@@ -88,10 +88,12 @@ class App extends Component {
         <div className="charts">
           <Chart
             data={this.state.activeProduct.qtyBought}
-            chartTitle={'Annual purchase chart'}/>
+            chartTitle={'Annual purchase chart'}
+            type={'horizontal'}/>
           <Chart
             data={this.state.activeProduct.qtySold}
-            chartTitle={'Annual sales chart'}/>
+            chartTitle={'Annual sales chart'}
+            type='line'/>
         </div>
 
       </div>

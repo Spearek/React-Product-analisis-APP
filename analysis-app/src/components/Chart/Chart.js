@@ -57,15 +57,62 @@ const chart = (props) => {
             enabled:true
         }
     }
+
+    let chartType = null;
+
+    switch (props.type) {
+        case ('bar'):
+            chartType = <div className={classes.chart}>
+                           <Bar
+                            data={chartData}
+                            options={chartOptions}
+                                                    /> 
+                        </div>;
+            break;
+        case ('horizontal'):
+                        chartType = <div className={classes.chart}>
+                           <HorizontalBar
+                            data={chartData}
+                            options={chartOptions}
+                                                    /> 
+                        </div>;
+            break;
+        case ('line'):
+            console.log(chartData.datasets[0].backgroundColor);
+            chartData.datasets[0].backgroundColor = 'transparent';
+            chartData.datasets[0].borderColor = 'orange';
+            chartData.datasets[0].borderWidth = 2;
+            
+            chartType = <div className={classes.chart}>
+                           <Line
+                            data={chartData}
+                            options={chartOptions}
+                                                    /> 
+                        </div>; 
+            break;
+        case ('pie'):
+            chartType = <div className={classes.chart}>
+                           <Pie
+                            data={chartData}
+                            options={chartOptions}
+                                                    /> 
+                        </div>; 
+            break;           
+        case ('doughnut'):
+            chartType = <div className={classes.chart}>
+                           <Doughnut
+                            data={chartData}
+                            options={chartOptions}
+                                                    /> 
+                        </div>; 
+            break;  
+        default:
+            chartType = null;
+    }
+
     
     return (
-    <div className={classes.chart}>
-        <HorizontalBar
-        data={chartData}
-        options={chartOptions}
-         /> 
-    </div>
- 
+    chartType
     )
     
 }
