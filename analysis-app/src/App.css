@@ -10,3 +10,17 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media screen and (max-width:1200px){
+  .topOfLayout{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 600px;
+  }
+  .charts{
+    flex-direction: column;
+
+  }
+}
