@@ -5,6 +5,13 @@ import classes from './Chart.module.css'
 
 const chart = (props) => {
 
+    let chartHeight = 150;
+
+    if (window.innerWidth <=600){
+        chartHeight = 250;
+    }
+
+
     const chartData = {
         labels:['Jan.','Feb.','Mar.','Apr.','May','Jun.','Jul.','Aug.','Sep.','Oct.','Nov.','Dec.'],
         datasets:[{
@@ -46,7 +53,7 @@ const chart = (props) => {
         },
         layout:{
             padding:{
-                left:50,
+                left:0,
                 right:0,
                 bottom:50,
                 top:0,
@@ -74,6 +81,7 @@ const chart = (props) => {
                            <HorizontalBar
                             data={chartData}
                             options={chartOptions}
+                            height={chartHeight}
                                                     /> 
                         </div>;
             break;
@@ -87,6 +95,7 @@ const chart = (props) => {
                            <Line
                             data={chartData}
                             options={chartOptions}
+                            height={chartHeight}
                                                     /> 
                         </div>; 
             break;
