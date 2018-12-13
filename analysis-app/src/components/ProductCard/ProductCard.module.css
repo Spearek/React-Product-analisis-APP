@@ -30,3 +30,35 @@
 .Prices p:last-of-type{
     color: green;
 }
+
+@media screen and (max-width:1000px){
+    .Card{
+        width: 80%;
+    }
+    .Card img{
+        width: 40%;
+    }
+    .Card p{
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width:792px){
+    .Prices p{
+       padding: 0; 
+    }
+}
+@media screen and (max-width:792px){
+    .Card{
+        width: 90%;
+    }
+    .Card p{
+        padding:  0 2%;
+    }
+    .Prices {
+       flex-direction: column; 
+    }
+    .Prices p {
+        margin: 2%; 
+     }
+}
