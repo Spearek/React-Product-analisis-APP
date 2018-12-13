@@ -12,9 +12,9 @@ const product = (props) => {
             <img src={require('../../assets/products_images/'+ props.image)} alt='xxx' />
             <p>{props.description}</p>
             <div className={classes.Prices}>
-                <p>Current purchase price: {props.purchacePrice}</p>
+                <p>Purchase price: {props.purchacePrice}</p>
                 <p>Margin: {margin}%</p>
-                <p>Current sale price: {props.salePrice}</p>
+                <p>Sale price: {props.salePrice}</p>
             </div>
         </div>
     )
