@@ -2,6 +2,7 @@
   "name": "analysis-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://spearek.github.io/React-Product-analisis-APP/",
   "dependencies": {
     "chart.js": "^2.7.3",
     "react": "^16.6.3",
@@ -23,5 +24,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
