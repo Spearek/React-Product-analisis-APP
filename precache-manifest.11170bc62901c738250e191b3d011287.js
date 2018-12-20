@@ -20,19 +20,19 @@ self.__precacheManifest = [
     "url": "/React-Product-analisis-APP/static/js/runtime~main.f1889bbf.js"
   },
   {
-    "revision": "8c8be0f41fc63730ad5a",
-    "url": "/React-Product-analisis-APP/static/js/main.8c8be0f4.chunk.js"
+    "revision": "46ba74224ba7213e391f",
+    "url": "/React-Product-analisis-APP/static/js/main.46ba7422.chunk.js"
   },
   {
     "revision": "91f30a8f8305d92d7ebf",
     "url": "/React-Product-analisis-APP/static/js/1.91f30a8f.chunk.js"
   },
   {
-    "revision": "8c8be0f41fc63730ad5a",
-    "url": "/React-Product-analisis-APP/static/css/main.41c4a7a9.chunk.css"
+    "revision": "46ba74224ba7213e391f",
+    "url": "/React-Product-analisis-APP/static/css/main.ee65d98a.chunk.css"
   },
   {
-    "revision": "ae9e7d21634a17ef62e019515703b08f",
+    "revision": "adfc9b518e22e1bec3755dbdd21f67c4",
     "url": "/React-Product-analisis-APP/index.html"
   }
 ];
