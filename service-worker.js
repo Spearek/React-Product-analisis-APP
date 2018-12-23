@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/React-Product-analisis-APP/precache-manifest.11170bc62901c738250e191b3d011287.js"
+  "/React-Product-analisis-APP/precache-manifest.920e034e17e67af6e0a5cca5f89b4fa3.js"
 );
 
 workbox.clientsClaim();
