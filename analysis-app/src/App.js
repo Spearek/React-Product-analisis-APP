@@ -73,7 +73,11 @@ class App extends Component {
           active: false
         }
 
-      ]
+      ],
+      selectedCurrency:{
+        name:'USD',
+        converter: 1
+      }
   }
 
   changeProductHandler = (event) => {
@@ -92,8 +96,9 @@ class App extends Component {
     newCurrencies.map((currency)=>{
       return currency.name === activeCurrency[0].name ? currency.active = true : currency.active = false  
    });
+   delete activeCurrency[0].active;
+   this.setState({currencies:newCurrencies,selectedCurrency:activeCurrency[0]});
 
-   this.setState({currencies:newCurrencies});
 
   }
 
@@ -118,7 +123,8 @@ class App extends Component {
               image={this.state.activeProduct.photo}
               description={this.state.activeProduct.description}
               salePrice={this.state.activeProduct.sale}
-              purchacePrice={this.state.activeProduct.purchase}
+              purchasePrice={this.state.activeProduct.purchase}
+              currency = {this.state.selectedCurrency}
             />
         </div>
 

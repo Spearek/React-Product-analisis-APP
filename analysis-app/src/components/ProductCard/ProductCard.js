@@ -4,7 +4,9 @@ import classes from './ProductCard.module.css';
 
 const product = (props) => {
 
-    let margin = Math.round((((props.salePrice - props.purchacePrice)/props.salePrice)*100) * 100) / 100;
+    let margin = Math.round((((props.salePrice - props.purchasePrice)/props.salePrice)*100) * 100) / 100;
+    let currencyPurchase = Math.round(props.purchasePrice * props.currency.converter *100)/100;
+    let currencySale = Math.round(props.salePrice * props.currency.converter *100)/100;;
 
     return (
         <div className={classes.Card}>
@@ -12,9 +14,9 @@ const product = (props) => {
             <img src={require('../../assets/products_images/'+ props.image)} alt='xxx' />
             <p>{props.description}</p>
             <div className={classes.Prices}>
-                <p>Purchase price: {props.purchacePrice}</p>
+                <p>Purchase price: {currencyPurchase} {props.currency.name}</p>
                 <p>Margin: {margin}%</p>
-                <p>Sale price: {props.salePrice}</p>
+                <p>Sale price: {currencySale} {props.currency.name}</p>
             </div>
         </div>
     )
