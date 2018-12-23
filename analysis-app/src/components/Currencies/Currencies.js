@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const currencies = () => {
+const currencies = (props) => {
 
 
     return(
@@ -9,19 +9,19 @@ const currencies = () => {
 
             <div className="radio">
                 <label>
-                 <input type='radio' value="USD" ></input>USD
+                 <input type='radio' value="USD" onChange={props.changed} checked={props.currencies[0].active}></input>USD
                 </label>
             </div>
             
             <div className="radio">
                 <label>
-                <input type='radio' value="EUR" ></input>EUR
+                <input type='radio' value="EUR" onChange={props.changed} checked={props.currencies[1].active} ></input>EUR
                 </label>
             </div>
 
             <div className="radio">
                 <label>
-                    <input type='radio'value="PLN"></input>PLN
+                    <input type='radio'value="PLN" onChange={props.changed} checked={props.currencies[2].active} ></input>PLN
                 </label>
             </div>   
 

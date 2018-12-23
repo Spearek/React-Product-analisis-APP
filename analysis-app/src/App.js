@@ -84,12 +84,28 @@ class App extends Component {
     this.setState({activeProduct: newProduct[0]});
   }
 
+  currencyChangeHandler = (event) => {
+  
+   let newCurrencies = JSON.parse(JSON.stringify(this.state.currencies));
+   let activeCurrency = this.state.currencies.filter((symbol)=>{ return symbol.name === event.target.value; });
+
+    newCurrencies.map((currency)=>{
+      return currency.name === activeCurrency[0].name ? currency.active = true : currency.active = false  
+   });
+
+   this.setState({currencies:newCurrencies});
+
+  }
+
 
   render() {
     return (
       <div className="App">
         <h1>Product Analysis App</h1>
-        <Currencies/>
+        <Currencies
+        currencies={this.state.currencies}
+        changed={this.currencyChangeHandler}/>
+
         <div className="topOfLayout">
             <Switcher
               list={this.state.products}
