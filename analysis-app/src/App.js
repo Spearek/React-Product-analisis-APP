@@ -54,7 +54,26 @@ class App extends Component {
       qtyBought: [45,60,33,47,55,41,32,74,50,66,104,84],
       qtySold: [40,57,40,30,24,14,50,43,38,60,143,152],
       purchase: 44,
-      sale: 48 }
+      sale: 48 },
+
+      currencies:[
+        {
+          name:'USD',
+          converter: 1,
+          active: true
+        },
+        {
+          name:'EUR',
+          converter: 0.88,
+          active: false
+        },
+        {
+          name:'PLN',
+          converter: 3.7,
+          active: false
+        }
+
+      ]
   }
 
   changeProductHandler = (event) => {
