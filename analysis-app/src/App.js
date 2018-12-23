@@ -3,6 +3,7 @@ import './App.css';
 import  ProductCard from './components/ProductCard/ProductCard';
 import Switcher from './components/Switcher/Switcher';
 import Chart from './components/Chart/Chart';
+import Currencies from './components/Currencies/Currencies';
 
 class App extends Component {
 
@@ -69,6 +70,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Product Analysis App</h1>
+        <Currencies/>
         <div className="topOfLayout">
             <Switcher
               list={this.state.products}
@@ -95,7 +97,6 @@ class App extends Component {
             chartTitle={'Annual sales chart'}
             type='line'/>
         </div>
-
       </div>
     );
   }
