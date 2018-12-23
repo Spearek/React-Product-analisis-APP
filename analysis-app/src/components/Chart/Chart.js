@@ -86,7 +86,6 @@ const chart = (props) => {
                         </div>;
             break;
         case ('line'):
-            console.log(chartData.datasets[0].backgroundColor);
             chartData.datasets[0].backgroundColor = 'transparent';
             chartData.datasets[0].borderColor = 'orange';
             chartData.datasets[0].borderWidth = 2;
